@@ -1,10 +1,10 @@
 PANDOC=pandoc --template=asrall.latex -V papersize=a4paper -V documentclass=article
-WIKI=01.wiki
-BT=02.bugtracker
-TT=03.tickettracker
-FORGE=04.forge
-CMS=05.cms
-GLPI=06.gestiondeparc
+WIKI=wiki
+BT=bugtracker
+TT=tickettracker
+FORGE=forge
+CMS=cms
+GLPI=gestiondeparc
 AUTHOR_META="Luc Didry"
 
 all: wiki bt tt forge cms glpi
