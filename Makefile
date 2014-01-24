@@ -19,9 +19,9 @@ wiki:
 bt:
 	$(PANDOC) $(BT).md -o $(BT).pdf \
 		-V author-meta=$(AUTHOR_META) \
+		-V title-meta="Séance n°2 : BugTracker" \
 		-V title="Séance n°2 : BugTracker" \
-		-V title="Séance n°2 : BugTracker" \
-		-V quote="Exterminate" \
+		-V quote="Exterminate!" \
 		-V quoteauthor="Les Daleks"
 tt:
 	$(PANDOC) $(TT).md -o $(TT).pdf
