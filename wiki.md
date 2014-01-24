@@ -6,7 +6,7 @@ C'est ce moteur que nous allons installer et personnaliser.
 
 ##Travail demandé
 ###Installation
-1. téléchargez la dernière version de *MediaWiki*^[https://www.mediawiki.org/wiki/Download] ;
+1. téléchargez la dernière version de *MediaWiki*^[<https://www.mediawiki.org/wiki/Download>] ;
 2. lisez le fichier INSTALL
 (lire le fichier INSTALL, s'il existe, est **TOUJOURS** la première chose que vous devez faire. Lire le fichier README est aussi une bonne pratique à intégrer) ;
 3. installez la version que vous avez téléchargé :
@@ -36,7 +36,7 @@ Pour choisir un wiki, il est bon de se poser la question des besoins que ce wiki
 * quel est le public ? Expérimenté ou non ? Aura-t'il peur de la syntaxe wiki ?
 * etc.
 
-La plupart du temps, un simple *DokuWiki*^[http://www.dokuwiki.org/dokuwiki] (moteur de wiki sans base de données) peut faire amplement l'affaire tout en soulageant l'administrateur système d'un certain nombres de tâches.
+La plupart du temps, un simple *DokuWiki*^[<http://www.dokuwiki.org/dokuwiki>] (moteur de wiki sans base de données) peut faire amplement l'affaire tout en soulageant l'administrateur système d'un certain nombres de tâches.
 
 Pour le fun, répétez tout ce que vous avez fait mais avec *DokuWiki* (+10 points d'expérience).
 
@@ -52,9 +52,9 @@ Il faut donc bien peser les avantages, les inconvénients et la réponse aux bes
 ##Questions
 Trouvez deux points qui soulagent l'administrateur système lorsqu'il s'occupe d'un wiki sans base de données par rapport à un wiki avec base de données.
 
-Envoyez vos réponses à asrall@fiat-tux.fr
+Envoyez vos réponses à asrall[AT]fiat-tux.fr
 
-Est-ce que ça comptera dans la note ? Mmh, bonne question… #Suspense #BofhPower
+Est-ce que ça comptera dans la note ? Mmh, bonne question… #Suspense #BastardOperatorFromHell
 
 ##Copyright
 Ce cours est honteusement pompé sur celui de Lucas \textsc{Nussbaum}, avec son aimable autorisation.
