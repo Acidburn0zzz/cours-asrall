@@ -16,6 +16,9 @@ wiki:
 		-V title="Séance n°1 : Wiki" \
 		-V quote="Lourd est le parpaing de la réalité sur la tartelette aux fraises de nos illusions" \
 		-V quoteauthor="Boulet"
+	$(PANDOC) $(WIKI)_correction.md -o $(WIKI)_correction.pdf \
+		-V author-meta=$(AUTHOR_META) \
+		-V title="[Correction] Séance n°1 : Wiki"
 bt:
 	$(PANDOC) $(BT).md -o $(BT).pdf \
 		-V author-meta=$(AUTHOR_META) \
@@ -23,6 +26,9 @@ bt:
 		-V title="Séance n°2 : BugTracker" \
 		-V quote="Exterminate!" \
 		-V quoteauthor="Les Daleks"
+	$(PANDOC) $(BT)_correction.md -o $(BT)_correction.pdf \
+		-V author-meta=$(AUTHOR_META) \
+		-V title-meta="[Correction] Séance n°2 : BugTracker" \
 tt:
 	$(PANDOC) $(TT).md -o $(TT).pdf
 forge:
