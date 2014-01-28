@@ -92,6 +92,19 @@ Trouvez deux points qui soulagent l'administrateur système lorsqu'il s'occupe d
 * **Facilité de sauvegarde et surtout de restauration (la sauvegarde d'une BDD pose généralement peu de problème. C'est plutôt la restauration qui pose problème de temps en temps)**
 * **Facilité de migration d'un serveur à un autre**
 
+Ont été données les réponses suivantes, pas forcément fausses, mais pas forcément vraies non plus^[« Lourd est le parpaing de la réalité sur la tartelette aux fraises de nos illusions »] :
+
+* Configuration par interface graphique sur *Dokuwiki*, par fichiers sur *Mediawiki*. Si cela est vrai dans ce cas, ce n'est pas forcément une généralité des wikis avec ou sans BDD.
+* Plus grande rapidité pour les wikis sans BDD. C'est vrai dans le cas d'un wiki de petite taille voire de taille moyenne avec une fréquentation relativement peu importante, mais pensez-vous que les accès disques soient vraiment plus efficaces qu'un SGBD qui cache au moins une partie de ses données en RAM ? Et ben non.
+* Pas besoin pour l'admin de connaître la syntaxe SQL. De toute façon, il faut la connaître au moins un peu, vous en mangerez nécessairement. L'admin sys doit avoir des compétences système, réseau, SGBD et même savoir mettre un peu le nez dans le code. Il doit connaître des trucs sur le bout des doigts et avoir des connaissances de base dans les autres domaines.
+
+De bonnes réponses auxquelles je n'avais pas pensé :
+
+* Les articles étant stockés dans des fichiers textes, on peut directement les modifier/supprimer sans avoir à passer par l'interface web ou en écrivant des requêtes SQL. J'ajouterais même qu'on peut grâce à cela les modifier en masse à grand coup de `sed`, ça peut être utile.
+* Si on externalise la base de données du wiki (placé sur une autre machine), utiliser une base de données demandera plus de ressources réseau. Effectivement, même si l'admin sys n'a pas plus de boulot s'il y a plus de trafic. Par contre il devra s'assurer de la confidentialité des données (dialogue avec le SGBD chiffré) et des ouvertures correctes des pare-feux et/ou des ACLs si les deux systèmes ne sont pas dans le même VLAN.
+* Moins de ressources utilisées sur la machine, moins de processus => moins de boulot :D
+* Réduit la surface d'attaque : pas de crainte d'injection SQL.
+
 #Bonus !
 Un fichier de configuration Apache qui fonctionne :
 
