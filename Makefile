@@ -1,7 +1,7 @@
 PANDOC=pandoc --template=asrall.latex -V papersize=a4paper -V documentclass=article
 WIKI=wiki
 BT=bugtracker
-TT=tickettracker
+RT=requesttracker
 FORGE=forge
 CMS=cms
 GLPI=gestiondeparc
@@ -28,12 +28,28 @@ bt:
 		-V quoteauthor="Les Daleks"
 	$(PANDOC) $(BT)_correction.md -o $(BT)_correction.pdf \
 		-V author-meta=$(AUTHOR_META) \
-		-V title-meta="[Correction] Séance n°2 : BugTracker" \
-tt:
-	$(PANDOC) $(TT).md -o $(TT).pdf
+		-V title-meta="[Correction] Séance n°2 : BugTracker"
+rt:
+	$(PANDOC) $(RT).md -o $(RT).pdf
+		-V author-meta=$(AUTHOR_META) \
+		-V title-meta="Séance n°3 : BugTracker"
+	$(PANDOC) $(RT)_correction.md -o $(RT)_correction.pdf \
+		-V title-meta="[Correction] Séance n°3 : BugTracker"
 forge:
 	$(PANDOC) $(FORGE).md -o $(FORGE).pdf
+		-V author-meta=$(AUTHOR_META) \
+		-V title-meta="Séance n°4 : BugTracker"
+	$(PANDOC) $(FORGE)_correction.md -o $(FORGE)_correction.pdf \
+		-V title-meta="[Correction] Séance n°4 : BugTracker"
 cms:
 	$(PANDOC) $(CMS).md -o $(CMS).pdf
+		-V author-meta=$(AUTHOR_META) \
+		-V title-meta="Séance n°5 : BugTracker"
+	$(PANDOC) $(CMS)_correction.md -o $(CMS)_correction.pdf \
+		-V title-meta="[Correction] Séance n°5 : BugTracker"
 glpi:
 	$(PANDOC) $(GLPI).md -o $(GLPI).pdf
+		-V author-meta=$(AUTHOR_META) \
+		-V title-meta="Séance n°6 : BugTracker"
+	$(PANDOC) $(GLPI)_correction.md -o $(GLPI)_correction.pdf \
+		-V title-meta="[Correction] Séance n°6 : BugTracker"
