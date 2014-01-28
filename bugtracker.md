@@ -89,6 +89,9 @@ Réponses à envoyer à asrall[AT]fiat-tux.fr avant le samedi 1er février à mi
 
 Je sais que le délai est plus court, mais ça me laisse plus de temps pour répondre.
 
-* Pourquoi cela est-il une mauvaise idée de modifier le fichier `default.css` ? Ce n'est pas grave, mais c'est une mauvaise idée. Pourquoi ?
-* *Bugzilla* est un autre exemple de *bugtracker*, écrit en Perl cette fois-ci. Sachant que j'aime ce langage comme un fou, comme un soldat, comme une star de cinéma, pourquoi ne l'ai-je pas choisi pour ce TP selon vous ? Indice : <http://www.bugzilla.org/docs/4.4/en/html/installation.html>
+Encore une fois, la réponse peut être fausse, du moment que vous réfléchissez et que votre réponse suit une certaine logique, ça me va.
 
+* Pourquoi cela est-il une mauvaise idée de modifier le fichier `default.css` ? Ce n'est pas grave, mais c'est une mauvaise idée. Pourquoi ?
+* *Bugzilla* est un autre exemple de *bugtracker*, écrit en Perl cette fois-ci. Sachant que j'aime ce langage comme un fou, comme un soldat, comme une star de cinéma, pourquoi ne l'ai-je pas choisi pour ce TP selon vous ? Indice : <http://www.bugzilla.org/docs/4.4/en/html/installation.html>, mais il y a aussi une autre raison.
+* Là par contre il n'y a qu'une seule bonne réponse à me donner. Donnez-moi la réponse à ce *regex crossword* : <http://regexcrossword.com/challenges/beginner/puzzles/5> (hé, il est simple celui-là).
+Les expressions rationnelles^[Véritable traduction de *regular expression*] sont une chose **très** utile dans la vie d'un admin car elle lui permette de modifier un fichier facilement (voir le `sed` du TP), de chercher les variables idoines dans un fichier de configuration, de rechercher un *pattern* dans un fichier journal (*log*), de créer des rapports, etc. Bref, habituez-vous à elles, aimez-les et elles vous le rendront bien.
