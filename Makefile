@@ -57,7 +57,9 @@ cms:
 	$(PANDOC) $(CMS).md -o $(CMS).pdf \
 		-V author-meta=$(AUTHOR_META) \
 		-V title-meta="Séance n°5 : Système de gestion de contenu" \
-		-V title="Séance n°5 : Système de gestion de contenu"
+		-V title="Séance n°5 : Système de gestion de contenu"\
+		-V quote="Non, non, c'est parce que quand je suis content, je vomis, et là, je suis hyper content." \
+		-V quoteauthor="Simon Jérémi"
 	$(PANDOC) $(CMS)_correction.md -o $(CMS)_correction.pdf \
 		-V author-meta=$(AUTHOR_META) \
 		-V title="[Correction] Séance n°5 : Système de gestion de contenu" \
