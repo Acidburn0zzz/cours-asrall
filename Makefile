@@ -68,7 +68,9 @@ glpi:
 	$(PANDOC) $(GLPI).md -o $(GLPI).pdf \
 		-V author-meta=$(AUTHOR_META) \
 		-V title="Séance n°6 : Gestion libre de parc informatique" \
-		-V title-meta="Séance n°6 : Gestion libre de parc informatique"
+		-V title-meta="Séance n°6 : Gestion libre de parc informatique" \
+		-V quote="Mais encore une fois, comment êtes-vous sûrs que ce ne sont que des femelles ?\\\\Quelqu'un se promène dans le parc et soulève les jupes des dinosaures ?" \
+		-V quoteauthor="Dr Ian Malcolm"
 	$(PANDOC) $(GLPI)_correction.md -o $(GLPI)_correction.pdf \
 		-V author-meta=$(AUTHOR_META) \
 		-V title="[Correction] Séance n°6 : Gestion libre de parc informatique" \
